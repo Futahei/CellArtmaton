@@ -1,6 +1,7 @@
 const CELL_SIZE = 3;
 const CELLS = [];
-const MAX_STATES = 2;
+const MAX_STATES = 3;
+const FLUCTUATION = 0.0;
 let STATE_TRANSITION_RULE = {};
 const MODE_COLOR = [];
 let ORDER = "";
@@ -35,7 +36,8 @@ function setup()
   MODE_COLOR.push([255, 255, 255]);
   for (let i = 0; i < MAX_STATES-1; i++)
   {
-    MODE_COLOR.push([Math.random()*255, Math.random()*255, Math.random()*255]);
+    // MODE_COLOR.push([Math.random()*255, Math.random()*255, Math.random()*255]);
+    MODE_COLOR.push([0, 0, 0]);
   }
 
   /** セルを生成 */
@@ -97,6 +99,6 @@ class Cell
     const c = this.mode;
     const r = this.rightCell ? this.rightCell.mode : 0;
 
-    this.nextMode = STATE_TRANSITION_RULE[[l, c, r].join(",")];
+    this.nextMode = Math.random() > FLUCTUATION ? STATE_TRANSITION_RULE[[l, c, r].join(",")] : Math.floor(Math.random()*MAX_STATES);
   }
 }
