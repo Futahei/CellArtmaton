@@ -4,7 +4,7 @@ const MAX_STATES = 3;
 const FLUCTUATION = 0.0;
 let STATE_TRANSITION_RULE = {};
 const MODE_COLOR = [];
-let ORDER = "DANGANRONPA";
+let ORDER = "";
 
 function setup()
 {
