@@ -36,8 +36,8 @@ function setup()
   MODE_COLOR.push([255, 255, 255]);
   for (let i = 0; i < MAX_STATES-1; i++)
   {
-    // MODE_COLOR.push([Math.random()*255, Math.random()*255, Math.random()*255]);
-    MODE_COLOR.push([0, 0, 0]);
+    MODE_COLOR.push([Math.random()*255, Math.random()*255, Math.random()*255]);
+    // MODE_COLOR.push([0, 0, 0]); 白黒がお好みの場合はこちら
   }
 
   /** セルを生成 */
