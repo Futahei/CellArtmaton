@@ -1,0 +1,33 @@
+{
+  "name": "cell-artmaton",
+  "version": "1.0.0",
+  "description": "generative art by cell automaton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futahei/Cell-Artmaton.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/futahei/Cell-Artmaton/issues"
+  },
+  "homepage": "https://github.com/futahei/Cell-Artmaton#readme",
+  "dependencies": {
+    "canvas": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
